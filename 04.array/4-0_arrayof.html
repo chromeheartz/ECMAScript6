@@ -37,7 +37,7 @@
             
             ***** Array.from() *****
 
-            Array.from()은 aarray-like object로 부터 array를 만드는 메소드.
+            Array.from()은 aarray-like object(유사배열)로 부터 array를 만드는 메소드.
 
             현재 버튼이 10개가 있다. 각각의 버튼에 이벤트 리스너를 붙힐것이다.
             const buttons = document.querySelectorAll("button");
@@ -66,6 +66,13 @@
 
             Array.from에서 그 array-like object를 호출하면
             array를 반환해서 forEach를 사용할 수 있게된다.
+
+            또한, 
+            const arr = Array.from(button)
+            arr.forEach(button => {
+                button.addEventListener('click', () => console.log("i've been clicked"));
+            })
+            이런식으로도 가능하다
 
         */
 
