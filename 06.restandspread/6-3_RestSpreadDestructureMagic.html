@@ -84,6 +84,18 @@
             이 함수는 아까처럼 object를 전달받아서 무언가를 return해줄것이다
 
             이번에도 destructuring먼저 해줄것이다.
+            const rename = ({NAME:name, ...rest}) => ({name, ...rest});
+            * 여기서 첫번쨰 ...rest 는 rest 구문이고 return해주는 ...rest 는 spread 구문이다. 
+            NAME : name
+            이 부분은 NAME을 가져와서 name으로 바꿈
+            const로 변수 새로 만드는것이나 다름없다. destructuring의 일종으로 변수의 이름을 바꾸는것.
+            이제 weirdObject의 NAME 부분은 소문자 name이랑 같은것이다.
+
+            그 후에 나머지를 가져와서 바뀐 name값이랑 함께 다시 return해준다.
+
+            *** 정리
+            rest, spread, destructuring이 es6의 가장 큰 핵심 같은 개념이라고 볼 수있다.
+            
 
         */
 
