@@ -1,6 +1,9 @@
-{/*  DOM contents
+{/* ********
+    DOM contents
+
     <button>Click me</button> 
-*/}
+    
+******** */}
 
 /*
     ***** this inarrow function *****
